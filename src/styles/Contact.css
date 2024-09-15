@@ -1,0 +1,96 @@
+.contact-section {
+  padding: 60px 20px;
+  background: linear-gradient(90deg, #003366, #004080); /* Background gradient for Contact section */
+  color: white;
+}
+
+.contact-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-content p {
+  margin-bottom: 20px;
+}
+
+.contact-form-container {
+  background-image: url('/path-to-your-background-image.jpg'); /* Path to your background image */
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form {
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  background-color: #ff5722;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #e64a19;
+}
+
+.success-message {
+  margin-top: 15px;
+  color: #d4edda;
+  background-color: #c3e6cb;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.social-links {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.social-links a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ff5722;
+}
+
+/* Optional: Map styling */
+/* .map {
+  margin-top: 30px;
+  text-align: center;
+} */

@@ -1,0 +1,60 @@
+.about-section {
+  padding: 60px 20px;
+  background: linear-gradient(90deg, #003366, #004080); /* Background gradient for About section */
+  color: white;
+}
+
+.about-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  padding-top: -10em; /* Adjusted top padding for heading */
+}
+
+.about-content p {
+  margin-bottom: 40px;
+}
+
+.experience {
+  margin-bottom: 50px;
+  line-height: 1em;
+}
+.experience h3{
+  font-size: 22px;
+  text-decoration: underline;
+}
+.skills {
+  margin-bottom: 50px;
+}
+.skills h3{
+  font-size: 22px;
+  text-decoration: underline;
+}
+.education {
+  margin-bottom: 30px;
+}
+.education h3{
+  font-size: 22px;
+  text-decoration: underline;
+}
+.education p{
+  line-height: 0%;
+}
+.experience ul, .skills ul {
+  list-style-type:none ;
+  padding: 0;
+}
+
+.experience li, .skills li {
+  margin-bottom: 10px;
+}
+
+.company-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #dc3801; /* Prominent color for company name */
+}
