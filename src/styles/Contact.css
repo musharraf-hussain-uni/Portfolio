@@ -1,13 +1,39 @@
 .contact-section {
-  padding: 60px 20px;
-  background: linear-gradient(90deg, #003366, #004080); /* Background gradient for Contact section */
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
+  padding: 0 20px;
+  overflow: hidden; /* Ensure content is within the bounds */
+}
+
+.contact-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/QA-bj.jpg"); /* Path to your background image */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9; /* Set the opacity of the background image */
+  z-index: -1; /* Ensure the background image stays behind the content */
 }
 
 .contact-content {
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 600px;
+  width: 50%;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay to enhance text readability */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  z-index: 1; /* Ensure content stays above the background image */
 }
+
+/* Other styles remain unchanged */
 
 .contact-content h2 {
   font-size: 2.5rem;
@@ -19,41 +45,47 @@
 }
 
 .contact-form-container {
-  background-image: url('/path-to-your-background-image.jpg'); /* Path to your background image */
-  background-size: cover;
-  background-position: center;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-}
-
-.contact-form {
-  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
+  background: rgba(255, 255, 255, 0.8); /* Slightly opaque white background for form */
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+.contact-form {
+  background: transparent; /* No additional background for the form itself */
+}
 
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .form-group label {
-  display: block;
+  display: flex;
+  font-size: 1.1rem;
   margin-bottom: 5px;
+  color: #333;
 }
 
 .form-group input, .form-group textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  width: 100%; /* Make input fields take the full width */
+  padding: 12px; /* Increase padding for larger input fields */
+  font-size: 1rem; /* Increase font size inside input fields */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+  box-sizing: border-box;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none; /* Remove default outline */
+  border-color: #0072ff; /* Change border color on focus */
 }
 
+textarea {
+  resize: vertical; /* Allow vertical resizing of textarea */
+}
 .submit-btn {
-  background-color: #ff5722;
+  background-color: #0072ff;
   color: white;
-  padding: 10px 20px;
+  padding: 12px 24px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -61,13 +93,13 @@
 }
 
 .submit-btn:hover {
-  background-color: #e64a19;
+  background-color: #112ca2;
 }
 
 .success-message {
   margin-top: 15px;
-  color: #d4edda;
-  background-color: #c3e6cb;
+  color: #ffffff;
+  background-color: #00741b;
   padding: 10px;
   border-radius: 5px;
 }
@@ -89,8 +121,3 @@
   color: #ff5722;
 }
 
-/* Optional: Map styling */
-/* .map {
-  margin-top: 30px;
-  text-align: center;
-} */

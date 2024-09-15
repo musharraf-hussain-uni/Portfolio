@@ -1,0 +1,13 @@
+.loading-screen {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #021157; /* Adjust to fit your theme */
+  }
+  
+  .spinner-container {
+    margin: 20px;
+  }
+  
