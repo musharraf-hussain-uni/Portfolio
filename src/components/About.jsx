@@ -29,6 +29,16 @@ const About = () => {
               teams to enhance software quality.
             </p>
           </div>
+
+          <h3 className="section-heading">Professional Experience</h3>
+          <div className="experience-item">
+            <h4 className="company-name">QA Engineer at 10Pearls</h4>
+            <p className="experience-description">
+              Developed and executed automated and manual test cases, ensured
+              comprehensive test coverage, and collaborated with development
+              teams to enhance software quality.
+            </p>
+          </div>
         </div>
 
         {/* Skills Section */}

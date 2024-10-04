@@ -12,8 +12,26 @@
   margin: 0 auto;
   padding: 0 20px;
 }
+.about-me {
+  background: linear-gradient(135deg, rgba(0, 114, 255, 0.8), rgba(0, 198, 255, 0.8)); /* Gradient background */
+  border-radius: 15px; /* Rounded corners */
+  padding: 30px; /* Increased padding */
+  margin: 20px 0; /* Space above and below */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover */
+}
 
-
+.about-me:hover {
+  transform: translateY(-5px); /* Raise on hover */
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4); /* Darker shadow on hover */
+}
+.about-heading {
+  font-size: 1.8rem; /* Larger font size for heading */
+  color: #ffffff; /* White color for heading */
+  margin-bottom: 10px; /* Space below heading */
+  text-align: center; /* Center the heading */
+  text-transform: uppercase; /* Uppercase letters */
+  letter-spacing: 2px; /* Spacing between letters */
+}
 .about-heading .section-heading{
     text-align: center;
   font-size: 2.5rem;
@@ -26,11 +44,11 @@
 }
 
 .about-description {
-  font-size: 1.4em;
-  line-height: 1.8;
-  margin-bottom: 40px;
-  color: #e0e0e0;
-  animation: fadeIn 1.5s ease-in-out;
+  font-size: 1rem; /* Slightly larger than normal text */
+  line-height: 1.6; /* Better line spacing */
+  color: #f0f0f0; /* Description text color */
+  text-align: justify; /* Justify text for a clean look */
+  padding: 0 10px; /* Side padding for text */
 }
 
 .section-title {
