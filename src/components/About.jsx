@@ -7,7 +7,7 @@ const About = () => {
 
     const options = {
       root: null, // Use the viewport as the root
-      threshold: 0.1, // Trigger when 10% of the element is visible
+      threshold: 0.6, // Trigger when 10% of the element is visible
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -53,7 +53,7 @@ const About = () => {
         <div className="experience-section fade-in">
           <h3 className="section-heading">Professional Experience</h3>
           <div className="experience-item">
-            <h4 className="company-name">QA Engineer at 10Pearls</h4>
+            <h4 className="company-name">QA Automation Engineer at 10Pearls</h4>
             <p className="experience-description">
               Developed and executed automated and manual test cases, ensured
               comprehensive test coverage, and collaborated with development
@@ -61,7 +61,7 @@ const About = () => {
             </p>
           </div>
           <div className="experience-item">
-            <h4 className="company-name">QA Engineer at 10Pearls</h4>
+            <h4 className="company-name">QA Engineer at Stratesfy</h4>
             <p className="experience-description">
               Developed and executed automated and manual test cases, ensured
               comprehensive test coverage, and collaborated with development
