@@ -24,6 +24,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .nav-links li {
@@ -43,21 +44,19 @@
   transform: scale(1.1); /* Slightly enlarges the text */
   transition: all 0.3s ease; }
 
-/* CV Download Button */
-.cv-download a {
-  color: white;
-  font-size: 1rem;
-  padding: 0.5rem 1rem;
-  border: 2px solid white;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.cv-download a:hover {
-  background-color: #021157; /* Change the background color to the same orange */
-  color: white; /* Text becomes white */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Adds a shadow for a floating effect */
-  transform: scale(1.05); /* Slightly enlarges the button */
-  transition: all 0.3s ease; 
-}
+  .cv-download a {
+    display: inline-block;
+    background: linear-gradient(90deg, #0072ff, #00c6ff); /* Gradient matching your color theme */
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 24px;
+    font-size: 14px;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .cv-download a:hover {
+    background: #021157; /* Hover color */
+    transform: translateY(-5px);
+  }
+  

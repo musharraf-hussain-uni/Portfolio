@@ -1,60 +1,102 @@
 .about-section {
-  padding: 60px 20px;
-  background: linear-gradient(90deg, #003366, #004080); /* Background gradient for About section */
-  color: white;
+  padding: 100px 0;
+  background: linear-gradient(135deg, #021157, #0072ff, #00c6ff);
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+
+  text-align: center;
 }
 
 .about-content {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
-.about-heading {
+
+.about-heading .section-heading{
+    text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 20px;
-  padding-top: -10em; /* Adjusted top padding for heading */
-}
-
-.about-content p {
   margin-bottom: 40px;
+  color: #00c6ff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  position: relative;
+  display: inline-block;
 }
 
-.experience {
-  margin-bottom: 50px;
-  line-height: 1em;
+.about-description {
+  font-size: 1.4em;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  color: #e0e0e0;
+  animation: fadeIn 1.5s ease-in-out;
 }
-.experience h3{
-  font-size: 22px;
-  text-decoration: underline;
+
+.section-title {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  color: #00e6ff;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 8px #000;
+  animation: slideInFromBottom 1.5s ease-in-out;
 }
-.skills {
-  margin-bottom: 50px;
-}
-.skills h3{
-  font-size: 22px;
-  text-decoration: underline;
-}
-.education {
+
+.experience-list,
+.skills-list {
+  list-style: none;
+  padding-left: 0;
   margin-bottom: 30px;
 }
-.education h3{
-  font-size: 22px;
-  text-decoration: underline;
-}
-.education p{
-  line-height: 0%;
-}
-.experience ul, .skills ul {
-  list-style-type:none ;
-  padding: 0;
+
+.experience-list li,
+.skills-list li {
+  font-size: 1.3em;
+  margin: 10px 0;
+  color: #ffffff;
+  transition: color 0.3s ease-in-out;
 }
 
-.experience li, .skills li {
-  margin-bottom: 10px;
+.experience-list li:hover,
+.skills-list li:hover {
+  color: #00e6ff;
 }
 
-.company-name {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #dc3801; /* Prominent color for company name */
+.education-item {
+  font-size: 1.4em;
+  color: #ffffff;
+  margin-bottom: 15px;
+  animation: fadeIn 1.7s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromBottom {
+  from {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

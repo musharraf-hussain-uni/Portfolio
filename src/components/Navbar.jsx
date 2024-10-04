@@ -32,7 +32,8 @@ const Navbar = () => {
       </ul>
       <div className="cv-download">
         <a
-          href="/path-to-your-cv.pdf"
+          href="/assets/cv.pdf"
+          download="Musharraf_Hussain.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >
