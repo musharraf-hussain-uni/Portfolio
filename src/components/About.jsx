@@ -1,12 +1,43 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/About.css";
 
 const About = () => {
+  useEffect(() => {
+    const sections = document.querySelectorAll(".fade-in"); // Select all sections to be animated
+
+    const options = {
+      root: null, // Use the viewport as the root
+      threshold: 0.1, // Trigger when 10% of the element is visible
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show"); // Add show class when in view
+          entry.target.classList.remove("hide"); // Remove hide class when in view
+        } else {
+          entry.target.classList.remove("show"); // Remove show class when out of view
+          entry.target.classList.add("hide"); // Add hide class when out of view
+        }
+      });
+    }, options);
+
+    sections.forEach((section) => {
+      observer.observe(section); // Start observing each section
+    });
+
+    return () => {
+      sections.forEach((section) => {
+        observer.unobserve(section); // Clean up observers on component unmount
+      });
+    };
+  }, []);
+
   return (
     <section id="about" className="about-section">
       <div className="about-content">
         {/* About Me Section */}
-        <div className="about-me">
+        <div className="about-me fade-in">
           <h2 className="about-heading">About Me</h2>
           <p className="about-description">
             Hi, I'm Musharraf Hussain, a dedicated QA Automation Engineer with
@@ -19,7 +50,7 @@ const About = () => {
         </div>
 
         {/* Professional Experience Section */}
-        <div className="experience-section">
+        <div className="experience-section fade-in">
           <h3 className="section-heading">Professional Experience</h3>
           <div className="experience-item">
             <h4 className="company-name">QA Engineer at 10Pearls</h4>
@@ -29,8 +60,6 @@ const About = () => {
               teams to enhance software quality.
             </p>
           </div>
-
-          <h3 className="section-heading">Professional Experience</h3>
           <div className="experience-item">
             <h4 className="company-name">QA Engineer at 10Pearls</h4>
             <p className="experience-description">
@@ -42,7 +71,7 @@ const About = () => {
         </div>
 
         {/* Skills Section */}
-        <div className="skills-section">
+        <div className="skills-section fade-in">
           <h3 className="section-heading">Skills</h3>
           <div className="skills-grid">
             <div className="skill-item">HTML, CSS, JavaScript</div>
@@ -66,7 +95,7 @@ const About = () => {
         </div>
 
         {/* Education Section */}
-        <div className="education-section">
+        <div className="education-section fade-in">
           <h3 className="section-heading">Education</h3>
           <div className="education-item">
             <p>2020-2024 (Completed)</p>
